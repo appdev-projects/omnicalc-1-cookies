@@ -1,18 +1,19 @@
 Rails.application.routes.draw do
 
-  get "/" => "application#square"
+ 
+  get("/", { :controller => "application", :action => "square" })
 
-  get "/square/new" => "application#square"
-  get "/square/results" => "application#square_results"
+  get("/square/new", { :controller => "application", :action => "square" })
+  get("/square/results", { :controller => "application", :action => "square_results" })
   
-  get "/square_root/new" => "application#square_root"
-  get "/square_root/results" => "application#square_root_results"
+  get("/square_root/new", { :controller => "application", :action => "square_root" })
+  get("/square_root/results", { :controller => "application", :action => "square_root_results" })
 
-  get "/payment/new" => "application#payment"
-  get "/payment/results" => "application#payment_results"
+  get("/payment/new", { :controller => "application", :action => "payment" })
+  get("/payment/results", { :controller => "application", :action => "payment_results" })
 
-  get "/random/new" => "application#random"
-  get "/random/results" => "application#random_results"
+  get("/random/new", { :controller => "application", :action => "random" })
+  get("/random/results", { :controller => "application", :action => "random_results" })
   
   # Write your routes above this line
   # =================================
