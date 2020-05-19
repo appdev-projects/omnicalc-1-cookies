@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
 
- 
   get("/", { :controller => "application", :action => "square" })
 
   get("/square/new", { :controller => "application", :action => "square" })
